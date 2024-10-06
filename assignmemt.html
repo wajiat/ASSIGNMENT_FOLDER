@@ -1,0 +1,76 @@
+let email=prompt("Enter your Email")
+let validEmail=email.endsWith("@gmail.com")
+if(validEmail){
+    console.log("valid")
+}else{
+    console.log("invalid")
+}
+2
+let pastre=prompt("Enter your username");
+let trimmedpastre= pastre.trim().toLowerCase()
+let  substring= trimmedpastre.charAt( trimmedpastre.length-1).toUpperCase()
+let substringpastre=trimmedpastre.substring("0",trimmedpastre.length-1)
+let validUsername=substringpastre.concat(substring)
+console.log(validUsername)
+
+// 3
+let link=prompt("enter valid link address")
+let linkaddress=link.startsWith("https://")
+if( linkaddress){
+    console.log("valid")
+}else{
+    console.log("invalid")
+}
+
+// 4
+// 5
+let username=prompt("enter the username")
+let userlength=username.length >=5 && username.length <=15
+if(userlength){
+    console.log("proceed")
+}else{
+    cosole.log("too short")
+}
+// 6
+let username1=prompt("enter your username")
+let trimmedusername1=username1.toLowerCase().trim()
+let changefirstToupper=trimmedusername1.charAt(0).toUpperCase()
+let subfirst=trimmedusername1.substring("1",trimmedusername1.length)
+let usernamechange=changefirstToupper.concat(subfirst)
+console.log(usernamechange)
+// 7
+let fileType=prompt("input your file extention")
+if(fileType.endsWith(".jpg")){
+ console.log("it is a JPG")}
+else if (fileType.endsWith(".png")){
+    console.log("it is mp3")
+}
+    
+ 
+
+// 8
+let phonenumber=prompt("enter your phone number")
+let nigcode="+234".startsWith()
+let validnum=phonenumber.length =11
+if(nigcode && validnum){
+    console.log("valid number")
+}else{
+    console.log("invalid")
+}
+// 9
+let word=prompt("input your word ")
+let checkWord=word.replaceAll("bad","nul")
+console.log(checkWord)
+// 10
+let score=prompt("enter your score")
+if( 75<=score && score<=100){
+    console.log("A")
+}else if(60<=score && score<=75){
+    console.log("B")
+}else if(50<=score && score<=60){
+    console.log("C")
+}else if(score<50){
+    console.log("retake")
+}
+
+
